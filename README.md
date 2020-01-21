@@ -19,7 +19,7 @@ yarn install
 # Run the app
 yarn serve
 ```
-After that, in our broswer go to http://localhost:8080/
+Launch your browser on --> http://localhost:8080/
 
 
 You can also run vue ui from your command line:
