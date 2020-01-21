@@ -1,0 +1,141 @@
+
+        {
+
+            "bands":[
+                 {
+                    "id": "soad00",
+                    "title": "System of a Down", 
+                    "description": "System of a Down is an Armenian-American heavy metal band from Glendale, California, formed in 1994. The band currently consists of Serj Tankian (lead vocals, keyboards), Daron Malakian (vocals, guitar), Shavo Odadjian (bass, backing vocals) and John Dolmayan (drums)",
+                    "type": "new-metal",
+                    "image": "soad.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "CSvFpBOe8eY",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": false
+                  },
+                  {
+                    "id": "jinj00",
+                    "title": "Jinjer", 
+                    "description": "Jinjer is a Ukrainian heavy metal band formed in 2009 from Donetsk, Ukraine.",
+                    "type": "hard-core",
+                    "image": "jinjer.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "a98LI-arNS4",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": true
+                  },
+                  {
+                    "id": "jpst00",
+                    "title": "Judas Priest", 
+                    "description": "Judas Priest are an English heavy metal band formed in West Bromwich in 1969.",
+                    "type": "heavy-metal",
+                    "image": "judas.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "L397TWLwrUU",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": false,
+                    "whiteText": true
+                  },
+                  {
+                    "id": "mball00",
+                    "title": "Madball", 
+                    "description": "Madball is an America, New York hardcore band that originated in the late 1980s.",
+                    "type": "hard-core",
+                    "image": "madball.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "b5RQhAPygXE",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": true
+                  },
+                  {
+                    "id": "opth00",
+                    "title": "Opeth", 
+                    "description": "Opeth is a Swedish progressive metal band from Stockholm, formed in 1989.",
+                    "type": "progressive-metal",
+                    "image": "opeth.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "8Fc0pbZxlo8",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": false
+                  },
+                  {
+                    "id": "slip00",
+                    "title": "Slipknot", 
+                    "description": "Slipknot is an American heavy metal band from Des Moines, Iowa. The band is well known for its attention-grabbing image, aggressive style of music, and energetic and chaotic live shows",
+                    "type": "new-metal",
+                    "image": "slipknot.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "VpATBBRajP8",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": true
+                  },
+                  {
+                    "id": "korn00",
+                    "title": "Korn", 
+                    "description": "Korn (stylized as KoЯn) is an American nu metal band from Bakersfield, California, formed in 1993. The band is notable for pioneering the nu metal genre and bringing it into the mainstream.",
+                    "type": "new-metal",
+                    "image": "korn.jpg",
+                    "button": {
+                      "follow": "Follow",
+                      "following": "Following",
+                      "add": "Add list",
+                      "added": "On list"
+                    },
+                    "videoCode": "CSJXle3LP_Q",
+                    "showDetail": false,
+                    "isSelected": false, 
+                    "isAdded": false ,
+                    "isActive": false,
+                    "whiteText": false
+                  }
+            ]
+
+        }

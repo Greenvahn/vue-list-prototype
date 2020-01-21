@@ -1,0 +1,282 @@
+@import 'variables.scss';
+
+
+button{
+
+    &:focus{
+        outline: 0 !important;
+        
+    }
+
+    /// Button show more
+    &.btn-plus{
+        color: #212529;
+        //background: $grey--light;
+        background-size: 30px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+
+        cursor: pointer;
+        opacity: 1;
+        transition:  opacity 0.6s ease;
+
+        svg{
+            position: relative;
+            left: -5px;
+            width: 30px;
+            height: 30px;
+            fill: #FFF;
+        }
+    }
+
+
+    //Button play
+    &.btn-play{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+
+        opacity: 0;
+        transition: opacity .4s ease-in;
+
+         svg{ fill: #dddddd;}
+         &:hover{svg{fill: #FFF;}}
+
+        }
+
+
+
+}
+
+  
+  ul li{
+    list-style: none;
+
+        &.band-item{
+            width: 90%;
+            max-width: 1023px;
+            min-height: 50px;
+            max-height: 280px;
+            
+            margin: 10px auto;
+            padding: 10px 0px;
+            border-radius: 3px;
+            border: 1px solid #FFF; 
+
+            background-repeat: no-repeat;
+
+            -webkit-filter:grayscale(80%);
+            filter: grayscale(80%);
+
+            transition: all .3s ease-in;
+
+
+            &:hover{
+                border: 1px solid #000;   
+                -webkit-filter:grayscale(0%);
+                filter: grayscale(0%);
+                
+            }
+            
+            &.active{
+                border: 1px solid #999;
+                -webkit-filter:grayscale(0%);
+                filter: grayscale(0%);
+
+                // fades in the overlay on hover when the item is active
+                &:hover{
+                    .overlay{opacity: 1}
+                }
+
+            }
+
+            /* Face item */
+                .face-item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                   // z-index: 2;
+                    
+                    h3{
+                        font-size: 1.8em;
+                        width: 75%; 
+                        text-align: left;
+                        margin: 0px;
+                        padding: 20px 20px 20px 40px;
+                        color: #000;
+                        font-weight: bold;
+                        &.toWhite{color: #FFF}
+                    }
+        
+                    .interactions{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+
+                        width: 25%;
+                        margin: 0px;
+                        height: 30px;
+                        padding: 20px;
+                    }
+                }
+
+
+
+            /* Description */
+                .des-item{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    //z-index: 2;
+
+                    .band-wrapper{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        width: 100%;
+
+                        .band-text{
+                            text-align: left;
+                            width: 45%;
+                            padding: 20px 20px 20px 0px;
+                            margin-left: 0px;
+                            color: #000;
+    
+                            //background-color: rgba($grey--light, .5);
+                            border-radius: 5px;
+
+                            &.toWhite{color: #FFF;}
+                        }
+                        .play-cover{
+                            width: 37%;
+                            height: 100%;
+                            background-color: transparent;
+                            cursor: pointer;
+
+                            &:hover{
+                                .btn-play{
+                                    opacity: .8;
+                                }
+                            }
+
+                        }
+                    }
+
+
+
+
+
+                    .band-track{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        width: 200px;
+                        margin-left: 40px;
+    
+
+                        button{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+
+                            width: 50%;
+                            padding: 0px;
+                            margin: 20px 0px;
+                            cursor: pointer;
+
+                            //background: #eee;
+                            color: #666;
+                           // border: 1px solid $grey;
+                            background-origin: border-box;
+                            border-radius: 3px;
+
+                            .icon{
+                                width: 25%;
+                                height: 40px;
+
+                                background: #FFF;
+                               // background: #eee;
+                                border: 1px solid rgba(0,0,0,.2);
+                                display: inline-block;
+                                vertical-align: bottom;
+                                text-align: left;
+
+                                min-width: 35px;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+
+                                svg{
+                                    position: relative;
+                                    width: 20px;
+                                    height: 25px;
+                                    left: 7px;
+                                    top: 8px;
+                                    fill: #636262;
+                                }
+                            }
+                            .button-text{
+                                width: 75%;
+                                line-height: 40px;
+                                font-weight: bold;
+
+                                background: #FFF;
+                                //background: #eee;
+                                border: 1px solid rgba(0,0,0,.2);
+                                display: inline-block;
+                                vertical-align: bottom;
+                                text-align: center;
+
+                                min-width: 100px;
+                                margin-left: -1px;
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                            }
+
+                            &:first-of-type{
+                                margin-right: 60px;
+                            }
+
+
+                            &.selected{
+                                .icon, .button-text{background-color: green; color: white;}
+                            }
+
+                            &.added{
+                                .icon, .button-text{background-color: lightseagreen; color: white;}
+                            }
+                        }
+
+                    }
+
+                    
+                }
+
+                /// overlay
+                .overlay{
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    background:linear-gradient(
+                        to left,
+                        rgba(#000, 0.5),
+                        rgba(#000, 0)
+                      );
+                    z-index: -1;
+                    
+                    transition: opacity 0.2s ease-in;
+                    opacity: 0.8;
+
+                }
+
+        }
+
+     
+  }
