@@ -18,9 +18,9 @@ cd vue-list-prototype
 yarn install
 # Run the app
 yarn serve
-# Go to your browser
-http://localhost:8080/
 ```
+After that, in our broswer go to http://localhost:8080/
+
 
 You can also run vue ui from your command line:
 ```bash
@@ -28,7 +28,10 @@ You can also run vue ui from your command line:
 cd vue-list-prototype
 # Run the vue ui
 vue ui
-# Go to your browser
-http://localhost:8080/
 ```
 
+This will launch vue ui interface in your browser:
+
+- On the menu from the left side select **Tasks**
+- Under project tasks select **serve compiler**
+- Press on **Run task** button
