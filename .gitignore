@@ -21,3 +21,6 @@ yarn-error.log*
 *.sln
 *.psd
 *.sw?
+
+#nodes
+yarn.lock

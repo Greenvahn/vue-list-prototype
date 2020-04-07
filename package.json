@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.0",
+    "kind-of": "^6.0.3",
     "node-sass": "^4.13.0",
     "reset-css": "^5.0.1",
     "sass": "^1.24.0",
