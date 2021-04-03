@@ -58,7 +58,7 @@ button{
             width: 90%;
             max-width: 1023px;
             min-height: 50px;
-            max-height: 280px;
+            // max-height: 280px;
             
             margin: 10px auto;
             padding: 10px 0px;
@@ -66,6 +66,8 @@ button{
             border: 1px solid #FFF; 
 
             background-repeat: no-repeat;
+            background-position: top right;
+            background-size: cover;
 
             -webkit-filter:grayscale(80%);
             filter: grayscale(80%);
@@ -135,29 +137,36 @@ button{
                     .band-wrapper{
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         align-items: center;
 
                         width: 100%;
 
                         .band-text{
                             text-align: left;
-                            width: 45%;
-                            padding: 20px 20px 20px 0px;
+                            width: 55%;
+                            max-width: 400px;
+                            padding: 20px;
                             margin-left: 0px;
                             color: #000;
-    
-                            //background-color: rgba($grey--light, .5);
                             border-radius: 5px;
+                            margin-left: 20px;
 
                             &.toWhite{color: #FFF;}
                         }
                         .play-cover{
-                            width: 37%;
+                            width: 25%;
                             height: 100%;
                             background-color: transparent;
                             cursor: pointer;
-
+                            a.btn-play {
+                                margin-right: 115px;
+                                svg {
+                                    max-width: 100px;
+                                }
+                                
+                            }
+                            
                             &:hover{
                                 .btn-play{
                                     opacity: .8;
@@ -280,3 +289,20 @@ button{
 
      
   }
+
+a.btn-play{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: opacity .4s ease-in;
+
+  svg { fill: #dddddd;}
+  &:hover{
+      svg{
+        fill: #FFF;
+      }
+    }
+
+}
