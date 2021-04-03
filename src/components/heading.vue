@@ -1,13 +1,17 @@
 <template>
   <div class="container">
-      <h1>{{data}}</h1>
+      <h1><iconLogo class="logo-style"></iconLogo></h1>
   </div>
 </template>
 
 <script>
+import iconLogo from '../assets/rockbreed_logo.svg';
 
 export default {
   name: 'Heading',
+  components: {
+    iconLogo
+  },
   props: {
     data:{
       type: String,
@@ -19,6 +23,9 @@ export default {
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style scoped lang="scss">
+    .logo-style {
+      width: 300px;
+      margin-bottom: 20px;
+    }
 </style>
