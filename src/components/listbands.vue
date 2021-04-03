@@ -20,7 +20,8 @@
           <div class="band-wrapper">
             <p class="band-text" :class="{ toWhite: item.whiteText }">{{item.description}}</p>
             <div class="play-cover">
-              <button class="btn-play" v-on:click="playVideo(item.videoCode)"><iconPlay></iconPlay></button>
+              <!-- <button class="btn-play" v-on:click="playVideo(item.videoCode)"><iconPlay></iconPlay></button> -->
+              <a class="btn-play" target="_blank" :href="`https://www.youtube.com/watch?v=${item.videoCode}`"><iconPlay></iconPlay></a>
             </div>
           </div>
           <div class="band-track">
@@ -90,18 +91,18 @@ export default {
             this.isAdded = value;
             this.$emit(id, this.isAdded);
         },
-        playVideo(value){
-          this.videoURL = 'https://www.youtube.com/watch?v='+value;
-          this.$emit('newVideo', this.videoURL);
+        // playVideo(value){
+        //   this.videoURL = 'https://www.youtube.com/watch?v='+value;
+        //   this.$emit('newVideo', this.videoURL);
 
-          // Show up video
-          document.querySelector('.video-window').style.opacity = '1';
-          document.querySelector('.video-window').style.visibility = 'visible';
+        //   // Show up video
+        //   document.querySelector('.video-window').style.opacity = '1';
+        //   document.querySelector('.video-window').style.visibility = 'visible';
 
-           document.querySelector('.y-video__button').click();
-           //document.querySelector('.ytp-play-button').click();
+        //   document.querySelector('.y-video__button').click();
+        //   //document.querySelector('.ytp-play-button').click();
           
-        } 
+        // } 
 
     }
 }
@@ -111,4 +112,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
   //@import 'listbands.scss';
+
+  .video-window {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+  }
 </style>
