@@ -17,7 +17,7 @@ cd vue-list-prototype
 # Install dependencies
 yarn install
 # Run the app
-yarn serve
+yarn start
 ```
 Launch your browser on --> http://localhost:8080/
 
